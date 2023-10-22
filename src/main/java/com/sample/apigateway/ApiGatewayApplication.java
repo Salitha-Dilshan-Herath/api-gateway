@@ -27,7 +27,7 @@ public class ApiGatewayApplication {
 						.and()
 						.method(HttpMethod.GET)
 						.filters(f -> f.filter(getRequestFilter).filters(responseValidationFilter))
-						.uri("https://htt"))
+						.uri("https://httpbin.org/get"))
 				.build();
 	}
 }
